@@ -1,3 +1,4 @@
+com\maxlvshv\taskflow\config\SecurityConfig.class
 com\maxlvshv\taskflow\controller\TestController.class
 com\maxlvshv\taskflow\entity\UserEntity.class
 com\maxlvshv\taskflow\config\WebConfig.class
