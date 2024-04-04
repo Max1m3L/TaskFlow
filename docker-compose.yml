@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  postgres:
+    image: 'postgres:16'
+    container_name: postgres-taskFlow
+    environment:
+      - POSTGRES_DB=TaskFlow
+      - POSTGRES_USER=postgres
+      - POSTGRES_HOST_AUTH_METHOD=trust
+      - POSTGRES_PASSWORD=root
+
+  java:
+    build: ./Server/Java
+    container_name: back-java
+    ports:
+      - "8080:8080"
+
+  front:
+    build: ./Client/reactapp
+    container_name: front
+    ports:
+      - "3000:3000"
