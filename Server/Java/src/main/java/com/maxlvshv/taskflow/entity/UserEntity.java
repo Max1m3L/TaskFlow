@@ -1,7 +1,6 @@
 package com.maxlvshv.taskflow.entity;
 
 
-import jakarta.persistence.*;
 import lombok.Data;
 
 //@Data
