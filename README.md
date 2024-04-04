@@ -2,10 +2,11 @@
 
 ----------
 
-+ ***User: (Id, Fist_name, Last_Name, Gmail, Role, Teams)***
-+ ***Team: (Id, Name, Participants(user Id), Projects(project Id))***
-+ ***Project: (Id, Name, Tasks(task Id), )***
-+ ***Task: (Id, Name, Descriptions, Priority, Condition, Stage)***
++ ***User: (Id, Fist_name, Last_Name, Gmail, Role, @Null Teams(Team Id))***
++ ***Team: (Id, Name, @Null Participants(user Id), @Null Projects(project Id))***
++ ***Project: (Id, Name, @Null Tasks(task Id), Team(team Id))***
++ ***Task: (Id, Name, Descriptions, Priority, Condition, Stage, Project(project Id))***
+_@Null = can be empty while creating_
 
 ---
 
@@ -17,5 +18,6 @@ Enum:
 _Task's Life cycle_: __Analysis-Developing-Testing-Review-Relies__
 
 ---
+![Architecture](Architecture_V1.png)
 
 __<u>P.S. Не сдаёмся, парни</u>__ 

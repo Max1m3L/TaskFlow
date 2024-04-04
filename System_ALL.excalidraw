@@ -1848,8 +1848,8 @@
     {
       "id": "SDO-zdUcoXdYsa2rj8Bn9",
       "type": "rectangle",
-      "x": 94,
-      "y": 431.99999999999994,
+      "x": 280,
+      "y": 440,
       "width": 227.99999999999997,
       "height": 142.49999999999997,
       "angle": 0,
@@ -1866,20 +1866,20 @@
         "type": 3
       },
       "seed": 715468855,
-      "version": 123,
-      "versionNonce": 691157147,
+      "version": 137,
+      "versionNonce": 100972257,
       "isDeleted": false,
       "boundElements": null,
-      "updated": 1712210580946,
+      "updated": 1712212656709,
       "link": null,
       "locked": false
     },
     {
       "id": "1UlrKH3jbMNAzGznoa7mn",
       "type": "text",
-      "x": 117.40825745270286,
-      "y": 447.976807077239,
-      "width": 87.11013793945312,
+      "x": 303.40825745270286,
+      "y": 455.9768070772391,
+      "width": 95.53187561035156,
       "height": 53.437499999999986,
       "angle": 0,
       "strokeColor": "#1e1e1e",
@@ -1893,21 +1893,21 @@
       "frameId": null,
       "roundness": null,
       "seed": 970277049,
-      "version": 162,
-      "versionNonce": 106275099,
+      "version": 178,
+      "versionNonce": 552415937,
       "isDeleted": false,
       "boundElements": null,
-      "updated": 1712210644889,
+      "updated": 1712212656709,
       "link": null,
       "locked": false,
-      "text": "User Service\nFeed Service\nNotificatoin",
+      "text": "User Service\nFeed Service\nNotifications ",
       "fontSize": 14.249999999999998,
       "fontFamily": 1,
       "textAlign": "left",
       "verticalAlign": "top",
       "baseline": 48,
       "containerId": null,
-      "originalText": "User Service\nFeed Service\nNotificatoin",
+      "originalText": "User Service\nFeed Service\nNotifications ",
       "lineHeight": 1.25
     },
     {
@@ -1948,7 +1948,7 @@
     }
   ],
   "appState": {
-    "gridSize": null,
+    "gridSize": 20,
     "viewBackgroundColor": "#ffffff"
   },
   "files": {}
