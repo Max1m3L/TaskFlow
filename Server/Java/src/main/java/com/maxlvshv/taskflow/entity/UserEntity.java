@@ -10,7 +10,7 @@ import lombok.Data;
 public class UserEntity {
     @Id
     @Column
-    public int Id;
+    public Integer Id;
     @Column
     public String name;
     @Column

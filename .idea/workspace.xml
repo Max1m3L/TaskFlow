@@ -5,8 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c60aae7c-8c05-45c3-9ccf-048f1f5b6278" name="Changes" comment="update README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Architecture_V1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Architecture_V1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/entity/TaskEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/entity/TaskEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/repository/TaskRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/repository/TaskRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/repository/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/userDetails/MyUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/userDetails/MyUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/userDetails/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/userDetails/MyUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/CustomerEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/ProjectEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/ProjectEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/TaskEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/TaskEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/TeamEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/UserEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/CustomerRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/ProjectRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/ProjectRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/TaskRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/TaskRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/TeamRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/UserRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/service/CustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/service/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/service/TaskService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/userDetails/MyUserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/userDetails/MyUserDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/userDetails/MyUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/userDetails/MyUserDetailsService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,22 +93,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "match-fields-for-excel",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/AllMyFiles/JavaProjects/TaskFlow/Server/Java",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;match-fields-for-excel&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/AllMyFiles/JavaProjects/TaskFlow/Server/Java&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="TaskFlow" />
@@ -132,6 +159,7 @@
       <workItem from="1712256101633" duration="18000" />
       <workItem from="1712282304298" duration="67000" />
       <workItem from="1712282396046" duration="218000" />
+      <workItem from="1712333720231" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="big stuff 3">
       <option name="closed" value="true" />

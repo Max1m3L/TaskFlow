@@ -9,10 +9,10 @@ import lombok.Data;
 public class TaskEntity {
     @Id
     @Column
-    public int id;
+    public Integer id;
 
     @Column
-    public int number;
+    public Integer number;
 
     @Column
     public String name;
@@ -57,24 +57,24 @@ public class TaskEntity {
     public String manager;
 
     @Column
-    public int sp_analysis;
+    public Integer sp_analysis;
 
     @Column
-    public int sp_test;
+    public Integer sp_test;
 
     @Column
-    public int sp_develop;
+    public Integer sp_develop;
 
     @Column
-    public int sp_release;
+    public Integer sp_release;
 
     @Column
     public String startDate;
 
     @Column
-    public int taskNumberBlock;
+    public Integer taskNumberBlock;
 
     @Column
-    public int blockTrack;
+    public Integer blockTrack;
 
 }
