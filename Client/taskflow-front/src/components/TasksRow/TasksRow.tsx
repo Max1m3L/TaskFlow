@@ -1,8 +1,9 @@
 import React from 'react';
 import MiniTask from "../MiniTask/MiniTask";
 import {TaskRowType} from "../../types/tasks";
+import {TaskEntity} from "../../types/entities";
 
-const TasksRow: React.FC<{ type: TaskRowType, className?: string }> = ({type, className}) => {
+const TasksRow: React.FC<{ type: TaskRowType, className?: string, tasks: TaskEntity[] }> = ({type, className, tasks}) => {
     let icon;
 
     if (type === TaskRowType.INPROGRESS) {
@@ -40,32 +41,14 @@ const TasksRow: React.FC<{ type: TaskRowType, className?: string }> = ({type, cl
             </div>
             <div
                 className="flex items-center gap-x-8 bg-[#F9F9F9] border-2 border-[#C9C6C3] rounded-3xl py-6 px-8 overflow-x-scroll">
-                <MiniTask
-                    title="Lorem ipsum dolor sit amet"
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                    status="ready"
-                    deadline="01.01.2000"
-                /><MiniTask
-                title="Lorem ipsum dolor sit amet"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                status="ready"
-                deadline="01.01.2000"
-            /><MiniTask
-                title="Lorem ipsum dolor sit amet"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                status="ready"
-                deadline="01.01.2000"
-            /><MiniTask
-                title="Lorem ipsum dolor sit amet"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                status="ready"
-                deadline="01.01.2000"
-            /><MiniTask
-                title="Lorem ipsum dolor sit amet"
-                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                status="ready"
-                deadline="01.01.2000"
-            />
+                {
+                    tasks.map(task => (
+                        <MiniTask
+                            key={task.id}
+                            task={task}
+                        />
+                    ))
+                }
             </div>
         </div>
     );
