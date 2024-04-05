@@ -8,7 +8,7 @@ const Project = () => {
     const id = params.projectId;
 
     useEffect(() => {
-        fetch("http://localhost:8000/projects/" + id)
+        fetch("http://localhost:8080/projects/" + id)
             .then(res => res.json())
             .then(json => console.log(json))
     })
