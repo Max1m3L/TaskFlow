@@ -8,5 +8,7 @@ import java.util.List;
 public interface ProjectRepo extends JpaRepository<ProjectEntity, Integer> {
     List<ProjectEntity> findAll();
 
+    List<ProjectEntity> findAllByName(String name);
+
     ProjectEntity findById(int id);
 }

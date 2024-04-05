@@ -16,6 +16,10 @@ public class TaskService {
         return taskRepo.findAll();
     }
 
+    public List<TaskEntity> getAllTasksByName(String name) {
+        return taskRepo.findAllByName(name);
+    }
+
     public TaskEntity getTaskById(int id) {
         return taskRepo.findById(id);
     }

@@ -19,4 +19,6 @@ public class ProjectService {
     public ProjectEntity getProjectById(int id) {
         return projectRepo.findById(id);
     }
+
 }
+
