@@ -11,9 +11,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/projects")
@@ -28,12 +27,10 @@ public class ProjectController {
     }
 
     @GetMapping("/tasks/{id}")
-    public Map<ProjectEntity, List<TaskEntity>> getProjectsTaskById(@PathVariable("id") int id) {
-        Map<ProjectEntity, List<TaskEntity>> map = new HashMap<>();
+    public List<TaskEntity> getProjectsTaskById(@PathVariable("id") int id) {
         ProjectEntity project = projectService.getProjectById(id);
 
-        map.put(project, taskRepo.findAllByProj(project.getName()));
-        return map;
+        return new ArrayList<>(taskRepo.findAllByProj(project.getName()));
     }
 
     @GetMapping("/{id}")
