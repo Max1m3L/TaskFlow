@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c60aae7c-8c05-45c3-9ccf-048f1f5b6278" name="Changes" comment="update README.md">
-      <change beforePath="$PROJECT_DIR$/Server/Java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/entity/TaskEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/entity/TaskEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/repository/TaskRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/repository/TaskRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/repository/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/userDetails/MyUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/userDetails/MyUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/userDetails/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/userDetails/MyUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/CustomerEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/ProjectEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/ProjectEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/TaskEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/TaskEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/TeamEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/UserEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/CustomerRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/ProjectRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/ProjectRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/TaskRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/TaskRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/TeamRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/UserRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/service/CustomerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/service/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/service/TaskService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/userDetails/MyUserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/userDetails/MyUserDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/userDetails/MyUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/userDetails/MyUserDetailsService.class" afterDir="false" />
-    </list>
+    <list default="true" id="c60aae7c-8c05-45c3-9ccf-048f1f5b6278" name="Changes" comment="try to add gitignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,6 +130,7 @@
       <workItem from="1712282304298" duration="67000" />
       <workItem from="1712282396046" duration="218000" />
       <workItem from="1712333720231" duration="25000" />
+      <workItem from="1712339283768" duration="303000" />
     </task>
     <task id="LOCAL-00001" summary="big stuff 3">
       <option name="closed" value="true" />
@@ -193,7 +164,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712306025456</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="delete bullshit Dockerfile">
+      <option name="closed" value="true" />
+      <created>1712339350932</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712339350932</updated>
+    </task>
+    <task id="LOCAL-00006" summary="try to add gitignore">
+      <option name="closed" value="true" />
+      <created>1712339580762</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712339580762</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +202,8 @@
     <MESSAGE value="added directory python" />
     <MESSAGE value="add docker-compose.yml" />
     <MESSAGE value="update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
+    <MESSAGE value="delete bullshit Dockerfile" />
+    <MESSAGE value="try to add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="try to add gitignore" />
   </component>
 </project>
