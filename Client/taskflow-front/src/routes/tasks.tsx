@@ -1,17 +1,26 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import Layout from "../components/Layout/Layout";
 import {useParams} from "react-router-dom";
 import Button from "../components/UI/Button/Button";
 import TasksRow from "../components/TasksRow/TasksRow";
 import {TaskRowType} from "../types/tasks";
+import {TaskEntity} from "../types/entities";
 
 const Tasks = () => {
     const params = useParams();
     const id = params.projectId;
 
-    useEffect(() => {
+    const [tasksJSON, setTasksJSON] = useState<TaskEntity[]>([]);
 
+    useEffect(() => {
+        fetch("http://localhost:8080/projects/tasks" + id)
+            .then(response => response.json())
+            .then(json => setTasksJSON(json))
     })
+
+    const inProgressTasks =  tasksJSON.filter(task => task.condition_ === "В работе");
+    const queuedTasks =  tasksJSON.filter(task => task.condition_ === "В очереди");
+    const completedTasks =  tasksJSON.filter(task => task.condition_ === "Завершена");
 
     return (
         <Layout>
@@ -27,9 +36,9 @@ const Tasks = () => {
                     </div>
                 </Button>
                 <ul className="pt-6">
-                    <li><TasksRow type={TaskRowType.INPROGRESS} /></li>
-                    <li><TasksRow type={TaskRowType.QUEUED} className="mt-6" /></li>
-                    <li><TasksRow type={TaskRowType.COMPLETED} className="mt-6" /></li>
+                    <li><TasksRow type={TaskRowType.INPROGRESS} tasks={inProgressTasks} /></li>
+                    <li><TasksRow type={TaskRowType.QUEUED} className="mt-6" tasks={queuedTasks} /></li>
+                    <li><TasksRow type={TaskRowType.COMPLETED} className="mt-6" tasks={completedTasks} /></li>
                 </ul>
             </section>
         </Layout>
