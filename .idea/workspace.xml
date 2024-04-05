@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c60aae7c-8c05-45c3-9ccf-048f1f5b6278" name="Changes" comment="try to add gitignore" />
+    <list default="true" id="c60aae7c-8c05-45c3-9ccf-048f1f5b6278" name="Changes" comment="try to add gitignore">
+      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/public/icons/filter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/public/icons/filterUp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/Filters/CustomerFilter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/Filters/Filters.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/Filters/NameFilter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/Filters/PriorityFilter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/Filters/TeamFilter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/StaffCard/StaffCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/routes/staff.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/types/filtersTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/components/SearchForm/SearchForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/SearchForm/SearchForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/components/Sprint/TasksRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/TasksRow/TasksRow.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/routes/projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/routes/projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/routes/stuff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/routes/employee.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/routes/tasks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/routes/tasks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/types/pages.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/types/pages.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,20 +51,12 @@
     &quot;assignee&quot;: &quot;Max1m3L&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="recentNewPullRequestHead">
-      <RepoCoordinatesHolder>
-        <option name="owner" value="Max1m3L" />
-        <option name="repository" value="TaskFlow" />
-      </RepoCoordinatesHolder>
-    </option>
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="1dbee7a5-0eb4-4b27-8db3-a0af2c3844da" />
-        <option name="url" value="https://github.com/Max1m3L/TaskFlow" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Max1m3L/TaskFlow",
+    "accountId": "1f1bd9b3-735b-47ff-a926-d9c30472d344"
+  }
+}]]></component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
@@ -63,22 +75,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;match-fields-for-excel&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/AllMyFiles/JavaProjects/TaskFlow/Server/Java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/_petprojects/TaskFlow",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="TaskFlow" />
@@ -114,6 +126,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -131,6 +150,7 @@
       <workItem from="1712282396046" duration="218000" />
       <workItem from="1712333720231" duration="25000" />
       <workItem from="1712339283768" duration="303000" />
+      <workItem from="1712340473147" duration="26000" />
     </task>
     <task id="LOCAL-00001" summary="big stuff 3">
       <option name="closed" value="true" />

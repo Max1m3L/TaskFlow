@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import Layout from "../components/Layout/Layout";
 import {useParams} from "react-router-dom";
 import Button from "../components/UI/Button/Button";
-import TasksRow from "../components/Sprint/TasksRow";
+import TasksRow from "../components/TasksRow/TasksRow";
 import {TaskRowType} from "../types/tasks";
 
 const Tasks = () => {

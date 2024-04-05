@@ -1,6 +1,6 @@
 import React from 'react';
-import {pages} from "../../types/pages";
-import pagesStore from "../../store/pagesStore";
+import {pages, pagesUrls} from "../../types/pages";
+import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
@@ -9,12 +9,7 @@ const Header = () => {
                 <ul className="flex items-center gap-x-6">
                     {
                         pages.map((page, i) => {
-                            if (i === pagesStore.page) {
-                                return <li key={i}><a href="#" className="py-2 px-4 rounded-2xl bg-accent text-[#FFFFFF] font-semibold text-lg">{page}</a>
-                                </li>
-                            }
-
-                            return <li key={i}><a href="#" className="py-2 px-4 rounded-2xl hover:bg-[#EEEEEE] font-semibold text-lg">{page}</a></li>
+                            return <li key={i}><Link to={pagesUrls[i]} className="py-2 px-4 rounded-2xl hover:bg-accent hover:text-[#FFFFFF] font-semibold text-lg transition">{page}</Link></li>
                         })
                     }
                 </ul>

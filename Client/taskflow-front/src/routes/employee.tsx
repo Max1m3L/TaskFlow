@@ -3,7 +3,7 @@ import {useParams} from "react-router-dom";
 import Layout from "../components/Layout/Layout";
 import MiniTask from "../components/MiniTask/MiniTask";
 
-const Stuff = () => {
+const Employee = () => {
     const params = useParams();
     const id = params.projectId;
 
@@ -48,4 +48,4 @@ const Stuff = () => {
     );
 };
 
-export default Stuff;
+export default Employee;

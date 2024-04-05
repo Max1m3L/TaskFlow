@@ -11,7 +11,8 @@ import {
 import Projects from "./routes/projects";
 import Project from "./routes/project";
 import Tasks from "./routes/tasks";
-import Stuff from "./routes/stuff";
+import Employee from "./routes/employee";
+import Staff from "./routes/staff";
 
 const router = createBrowserRouter([
     {
@@ -31,8 +32,12 @@ const router = createBrowserRouter([
         element: <Tasks />
     },
     {
-        path: "/stuff/:stuffId",
-        element: <Stuff />
+        path: "/employee/:employeeId",
+        element: <Employee />
+    },
+    {
+        path: "/staff",
+        element: <Staff />
     }
 ])
 

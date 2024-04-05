@@ -4,7 +4,7 @@ const SearchForm = () => {
     return (
         <div className="text-center">
             <form role="search"
-                  className="inline-flex items-center gap-x-6 py-4 px-8 my-7 rounded-3xl bg-white border border-black">
+                  className="inline-flex items-center gap-x-6 py-4 px-8 my-7 rounded-3xl bg-white border-2 border-black">
                 <input type="text" className="min-w-[800px] focus:outline-none"
                        placeholder="Введите название проекта или его номер"/>
                 <button type="submit">

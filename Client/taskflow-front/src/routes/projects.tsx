@@ -2,12 +2,13 @@ import React from 'react';
 import Layout from "../components/Layout/Layout";
 import SearchForm from "../components/SearchForm/SearchForm";
 import ProjectPreview from "../components/ProjectPreview/ProjectPreview";
+import Filters from "../components/Filters/Filters";
 
 const Projects = () => {
     return (
         <Layout className="text-center">
             <SearchForm/>
-            <h1 className="pb-12">FILTERS COMING SOON</h1>
+            <Filters />
             <div className="flex flex-col max-w-[1200px] mx-auto gap-y-7 pb-7">
                 <ProjectPreview title="Lorem ipsum dolor sit amet"
                                 link="/projects"
