@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c60aae7c-8c05-45c3-9ccf-048f1f5b6278" name="Changes" comment="try to add gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/AllMyFiles/JavaProjects/TaskFlow/Server/Java",
+    "last_opened_file_path": "D:/_petprojects/TaskFlow/Client/taskflow-front",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,7 +121,7 @@
       <workItem from="1712238189667" duration="1047000" />
       <workItem from="1712247246483" duration="280000" />
       <workItem from="1712256101633" duration="18000" />
-      <workItem from="1712341757637" duration="1040000" />
+      <workItem from="1712341757637" duration="2305000" />
     </task>
     <task id="LOCAL-00001" summary="big stuff 3">
       <option name="closed" value="true" />
@@ -148,7 +147,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712238860602</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="try to add gitignore">
+      <option name="closed" value="true" />
+      <created>1712342974990</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712342974990</updated>
+    </task>
+    <task id="LOCAL-00005" summary="try to add gitignore">
+      <option name="closed" value="true" />
+      <created>1712343252310</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712343252310</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +184,7 @@
     <MESSAGE value="big stuff 3" />
     <MESSAGE value="added directory python" />
     <MESSAGE value="add docker-compose.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add docker-compose.yml" />
+    <MESSAGE value="try to add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="try to add gitignore" />
   </component>
 </project>

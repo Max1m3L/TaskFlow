@@ -1,4 +1,4 @@
-import React, {useEffect, useMemo} from 'react';
+import React, {useEffect} from 'react';
 import Layout from "../components/Layout/Layout";
 import {useParams} from "react-router-dom";
 import Button from "../components/UI/Button/Button";
@@ -8,7 +8,9 @@ const Project = () => {
     const id = params.projectId;
 
     useEffect(() => {
-
+        fetch("http://localhost:8000/projects/" + id)
+            .then(res => res.json())
+            .then(json => console.log(json))
     })
 
 
