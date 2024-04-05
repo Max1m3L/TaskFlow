@@ -3,31 +3,20 @@ package com.maxlvshv.taskflow.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.Date;
-import java.util.List;
-
 @Data
 @Entity
 @Table(name = "Projects")
 public class ProjectEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long id;
-
+    @Column
+    public Integer id;
+    @Column
     public String name;
+    @Column
+    public String description;
+    @Column
+    public String startDate;
+    @Column
+    public String endDate;
 
-    @OneToMany(mappedBy = "project")
-    public List<TaskEntity> tasks;
-
-    public Date startDate;
-
-    public Date endDate;
-
-    @ManyToOne
-    @JoinColumn(name = "team_id")
-    public TeamEntity team;
-
-    @ManyToOne
-    @JoinColumn(name = "customer_id")
-    public CustomerEntity customer;
 }

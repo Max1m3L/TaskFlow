@@ -1,7 +1,12 @@
 package com.maxlvshv.taskflow.repository;
 
-import com.maxlvshv.taskflow.entity.UserEntity;
+import com.maxlvshv.taskflow.entity.TaskEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface TaskRepo extends JpaRepository<UserEntity, Long> {
+import java.util.List;
+
+public interface TaskRepo extends JpaRepository<TaskEntity, Integer> {
+    List<TaskEntity> findAll();
+
+    TaskEntity findById(int id);
 }
