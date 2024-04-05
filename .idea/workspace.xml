@@ -4,45 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c60aae7c-8c05-45c3-9ccf-048f1f5b6278" name="Changes" comment="try to add gitignore">
-      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/public/icons/filter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/public/icons/filterUp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/Filters/CustomerFilter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/Filters/Filters.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/Filters/NameFilter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/Filters/PriorityFilter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/Filters/TeamFilter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/StaffCard/StaffCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/routes/staff.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/taskflow-front/src/types/filtersTypes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/components/SearchForm/SearchForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/SearchForm/SearchForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/components/Sprint/TasksRow.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/components/TasksRow/TasksRow.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/routes/projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/routes/projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/routes/stuff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/routes/employee.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/routes/tasks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/routes/tasks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/types/pages.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/types/pages.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-    </list>
+    <list default="true" id="c60aae7c-8c05-45c3-9ccf-048f1f5b6278" name="Changes" comment="try to add gitignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Dockerfile" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="adding-all" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -51,12 +19,20 @@
     &quot;assignee&quot;: &quot;Max1m3L&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Max1m3L/TaskFlow",
-    "accountId": "1f1bd9b3-735b-47ff-a926-d9c30472d344"
-  }
-}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="Max1m3L" />
+        <option name="repository" value="TaskFlow" />
+      </RepoCoordinatesHolder>
+    </option>
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1dbee7a5-0eb4-4b27-8db3-a0af2c3844da" />
+        <option name="url" value="https://github.com/Max1m3L/TaskFlow" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
@@ -82,7 +58,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/_petprojects/TaskFlow",
+    "last_opened_file_path": "C:/AllMyFiles/JavaProjects/TaskFlow/Server/Java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,16 +98,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -146,11 +114,6 @@
       <workItem from="1712238189667" duration="1047000" />
       <workItem from="1712247246483" duration="280000" />
       <workItem from="1712256101633" duration="18000" />
-      <workItem from="1712282304298" duration="67000" />
-      <workItem from="1712282396046" duration="218000" />
-      <workItem from="1712333720231" duration="25000" />
-      <workItem from="1712339283768" duration="303000" />
-      <workItem from="1712340473147" duration="26000" />
     </task>
     <task id="LOCAL-00001" summary="big stuff 3">
       <option name="closed" value="true" />
@@ -176,31 +139,7 @@
       <option name="project" value="LOCAL" />
       <updated>1712238860602</updated>
     </task>
-    <task id="LOCAL-00004" summary="update README.md">
-      <option name="closed" value="true" />
-      <created>1712306025456</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1712306025456</updated>
-    </task>
-    <task id="LOCAL-00005" summary="delete bullshit Dockerfile">
-      <option name="closed" value="true" />
-      <created>1712339350932</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1712339350932</updated>
-    </task>
-    <task id="LOCAL-00006" summary="try to add gitignore">
-      <option name="closed" value="true" />
-      <created>1712339580762</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1712339580762</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,9 +160,6 @@
     <MESSAGE value="big stuff 3" />
     <MESSAGE value="added directory python" />
     <MESSAGE value="add docker-compose.yml" />
-    <MESSAGE value="update README.md" />
-    <MESSAGE value="delete bullshit Dockerfile" />
-    <MESSAGE value="try to add gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="try to add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add docker-compose.yml" />
   </component>
 </project>
