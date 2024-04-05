@@ -2,13 +2,13 @@ import React, {useEffect, useState} from 'react';
 import Layout from "../components/Layout/Layout";
 import {useParams} from "react-router-dom";
 import Button from "../components/UI/Button/Button";
-import {Project} from "../types/entities";
+import {ProjectEntity} from "../types/entities";
 
 const Project = () => {
     const params = useParams();
     const id = params.projectId;
 
-    const [projectJSON, setProjectJSON] = useState<Project | null>(null)
+    const [projectJSON, setProjectJSON] = useState<ProjectEntity | null>(null)
 
     useEffect(() => {
         fetch("http://localhost:8080/projects/" + id)

@@ -1,4 +1,4 @@
-export interface Project {
+export interface ProjectEntity {
     id: number;
     name: string;
     description: string;
@@ -6,7 +6,7 @@ export interface Project {
     endDate: string;
 }
 
-export interface User {
+export interface UserEntity {
     id: number;
     name: string;
     surname: string;
@@ -15,7 +15,7 @@ export interface User {
     team: string;
 }
 
-export interface Task {
+export interface TaskEntity {
     id: number;
     name: string;
     description: string;
