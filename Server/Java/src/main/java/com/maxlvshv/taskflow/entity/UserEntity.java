@@ -3,15 +3,13 @@ package com.maxlvshv.taskflow.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.Arrays;
-import java.util.Collection;
+import java.util.List;
+import java.util.Set;
 
 @Data
 @Entity
-@Table(name = "User")
+@Table(name = "Users")
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,7 +27,17 @@ public class UserEntity {
 
     public String post;
 
-    public String team;
+    @ManyToOne
+    @JoinColumn(name = "team_id")
+    public TeamEntity team;
+
+    @ManyToMany
+    @JoinTable(
+            name = "user_task",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "task_id")
+    )
+    public List<TaskEntity> tasks;
 
     public String role;
 }
