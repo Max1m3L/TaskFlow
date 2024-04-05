@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  java:
-    build: ./Server/Java
-    container_name: back-java
+  front:
+    build: ./Client/reactapp
+    container_name: front
     ports:
-      - "8080:8080"
+      - "3000:3000"
