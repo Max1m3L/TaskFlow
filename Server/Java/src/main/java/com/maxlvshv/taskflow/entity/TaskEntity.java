@@ -1,43 +1,80 @@
 package com.maxlvshv.taskflow.entity;
 
-import com.maxlvshv.taskflow.entity.taskStuff.Condition;
-import com.maxlvshv.taskflow.entity.taskStuff.Priority;
-import com.maxlvshv.taskflow.entity.taskStuff.Stage;
 import jakarta.persistence.*;
 import lombok.Data;
-
-import java.util.Date;
-import java.util.List;
 
 @Data
 @Entity
 @Table(name = "Tasks")
 public class TaskEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long id;
+    @Column
+    public int id;
 
+    @Column
+    public int number;
+
+    @Column
     public String name;
 
+    @Column
     public String description;
 
-    public Date startDate;
+    @Column
+    public String priority;
 
-    public Date endDate;
+    @Column
+    public String customer;
 
-    @ManyToMany(mappedBy = "tasks")
-    public List<UserEntity> users;
+    @Column
+    public String inspector;
 
-    @Enumerated(EnumType.STRING)
-    public Priority priority;
+    @Column
+    public String project;
 
-    @Enumerated(EnumType.STRING)
-    public Condition condition;
+    @Column
+    public String team;
 
-    @Enumerated(EnumType.STRING)
-    public Stage stage;
+    @Column
+    public String stage;
 
-    @ManyToOne
-    @JoinColumn(name = "project_id")
-    public ProjectEntity project;
+    @Column
+    public String status;
+
+    @Column
+    public String condition;
+
+    @Column
+    public String analyst;
+
+    @Column
+    String developer;
+
+    @Column
+    public String tester;
+
+    @Column
+    public String manager;
+
+    @Column
+    public int sp_analysis;
+
+    @Column
+    public int sp_testier;
+
+    @Column
+    public int sp_develop;
+
+    @Column
+    public int sp_release;
+
+    @Column
+    public String startDate;
+
+    @Column
+    public int taskNumberBlock;
+
+    @Column
+    public int blockTrack;
+
 }
