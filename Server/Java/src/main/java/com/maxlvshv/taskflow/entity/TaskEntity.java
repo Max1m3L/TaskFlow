@@ -30,22 +30,22 @@ public class TaskEntity {
     public String inspector;
 
     @Column
-    public String project;
+    public String proj;
 
     @Column
-    public String team;
+    public String team_;
 
     @Column
-    public String stage;
+    public String stage_;
 
     @Column
-    public String status;
+    public String status_;
 
     @Column
-    public String condition;
+    public String condition_;
 
     @Column
-    public String analyst;
+    public String analyst_;
 
     @Column
     String developer;
@@ -60,7 +60,7 @@ public class TaskEntity {
     public int sp_analysis;
 
     @Column
-    public int sp_testier;
+    public int sp_test;
 
     @Column
     public int sp_develop;
