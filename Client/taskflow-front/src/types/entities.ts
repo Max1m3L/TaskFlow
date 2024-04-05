@@ -2,8 +2,8 @@ export interface ProjectEntity {
     id: number;
     name: string;
     description: string;
-    startDate: string;
-    endDate: string;
+    startdate: string;
+    enddate: string;
 }
 
 export interface UserEntity {
