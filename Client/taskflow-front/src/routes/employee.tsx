@@ -26,20 +26,6 @@ const Employee = () => {
                         </ul>
                         <div className="mt-10">
                             <h3 className="text-2xl font-bold">Связанные задачи</h3>
-                            <ul className="flex flex-wrap gap-x-4 gap-y-6 mt-6">
-                                <li><MiniTask title={"Lorem ipsum dolor sit amet"}
-                                              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
-                                              status={"ready"} deadline={"20.04.2024"}/></li>
-                                <li><MiniTask title={"Lorem ipsum dolor sit amet"}
-                                              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
-                                              status={"ready"} deadline={"20.04.2024"}/></li>
-                                <li><MiniTask title={"Lorem ipsum dolor sit amet"}
-                                              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
-                                              status={"ready"} deadline={"20.04.2024"}/></li>
-                                <li><MiniTask title={"Lorem ipsum dolor sit amet"}
-                                              text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
-                                              status={"ready"} deadline={"20.04.2024"}/></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
