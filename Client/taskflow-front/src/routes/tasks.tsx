@@ -13,7 +13,7 @@ const Tasks = () => {
     const [tasksJSON, setTasksJSON] = useState<TaskEntity[]>([]);
 
     useEffect(() => {
-        fetch("http://localhost:8080/projects/tasks" + id)
+        fetch("http://localhost:8080/projects/tasks/" + id)
             .then(response => response.json())
             .then(json => setTasksJSON(json))
     })
