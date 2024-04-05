@@ -10,11 +10,11 @@ const Header = () => {
                     {
                         pages.map((page, i) => {
                             if (i === pagesStore.page) {
-                                return <li key={i}><a href="#" className="py-2 px-4 rounded-2xl bg-accent text-[#FFFFFF] font-semibold">{page}</a>
+                                return <li key={i}><a href="#" className="py-2 px-4 rounded-2xl bg-accent text-[#FFFFFF] font-semibold text-lg">{page}</a>
                                 </li>
                             }
 
-                            return <li key={i}><a href="#" className="py-2 px-4 rounded-2xl hover:bg-[#EEEEEE] font-semibold">{page}</a></li>
+                            return <li key={i}><a href="#" className="py-2 px-4 rounded-2xl hover:bg-[#EEEEEE] font-semibold text-lg">{page}</a></li>
                         })
                     }
                 </ul>

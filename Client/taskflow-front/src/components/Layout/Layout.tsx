@@ -12,7 +12,7 @@ const Layout: React.FC<{children: React.ReactNode; className?: string}> = ({chil
     return (
         <>
             <Header></Header>
-            <main className={"bg-[#EFF1F9]" + (className ? (" " + className) : '')}>
+            <main className={"bg-[#EFF1F9] text-text-black" + (className ? (" " + className) : '')}>
                 {children}
             </main>
         </>
