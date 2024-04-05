@@ -11,6 +11,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api")
 public class TestController {
+
     @GetMapping
     public ResponseEntity<Map<String, String>> getHello() {
         Map<String , String > map = new HashMap<>();
@@ -19,4 +20,5 @@ public class TestController {
 
         return ResponseEntity.ok(map);
     }
+
 }
