@@ -1,12 +1,12 @@
 import React from 'react';
 
-const SearchForm: React.FC<{setQuery: React.Dispatch<React.SetStateAction<string>>}> = ({setQuery}) => {
+const SearchForm: React.FC<{setQuery: React.Dispatch<React.SetStateAction<string>>; className?: string}> = ({setQuery, className}) => {
 
 
     return (
-        <div className="text-center">
+        <div className={"text-center"}>
             <form role="search"
-                  className="inline-flex items-center gap-x-6 py-4 px-8 my-7 rounded-3xl bg-white border-2 border-black">
+                  className={"inline-flex items-center gap-x-6 py-4 px-8 my-7 rounded-3xl bg-white border-2 border-black" + (className ? ` ${className}` : "")}>
                 <input type="text" className="min-w-[800px] focus:outline-none"
                        placeholder="Введите название проекта или его номер"
                         onChange={e => setQuery(e.target.value)}
