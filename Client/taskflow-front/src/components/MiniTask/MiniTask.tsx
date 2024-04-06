@@ -1,8 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
+import deadlinecounter from '../../api/deadlinecounter';
 import {TaskEntity} from "../../types/entities";
 
 const MiniTask: React.FC<{ task: TaskEntity }> = ({task}) => {
     const [opened, setOpened] = useState(false);
+
+    const timeToAdd = Math.ceil((Number(task.sp_test) + Number(task.sp_analysis) + Number(task.sp_analysis) + Number(task.sp_release)) / 8);
+    const deadline = deadlinecounter((task.startdate ? new Date(task.startdate.split(' ')[0]).getTime() : Date.now()), timeToAdd).toDateString();
 
     const handleTaskOpen = () => {
         setOpened(!opened);
@@ -23,7 +27,7 @@ const MiniTask: React.FC<{ task: TaskEntity }> = ({task}) => {
             <p className="text-sm pb-6">{task.description ?? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}</p>
             <div className="flex items-center justify-between gap-x-6">
                 <p className="py-3 px-6 bg-[#EEEEEE] rounded-xl">{task.status_}</p>
-                <p className="py-3 px-6 bg-[#EEEEEE] rounded-xl">{"00.00.0000"}</p>
+                <p className="py-3 px-6 bg-[#EEEEEE] rounded-xl">{deadline}</p>
             </div>
             {
                 opened &&
@@ -53,7 +57,7 @@ const MiniTask: React.FC<{ task: TaskEntity }> = ({task}) => {
                             <div className="flex-shrink-0">
                                 <p className="text-[#636363] text-lg font-light">#{task.id}</p>
                                 <p className="text-[#636363] text-lg font-light mb-2">{task.stage_}</p>
-                                <p className={"font-semibold text-xl mb-6"}>Срок до: SP ALGO</p>
+                                <p className={"font-semibold text-xl mb-6"}>Срок до: {deadline}</p>
                                 <p className={"font-semibold text-lg"}>Сотрудники:</p>
                                 <ul>
                                     {

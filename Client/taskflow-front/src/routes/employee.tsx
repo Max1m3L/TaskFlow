@@ -5,7 +5,7 @@ import {UserEntity} from "../types/entities";
 
 const Employee = () => {
     const params = useParams();
-    const id = params.projectId;
+    const id = params.userId;
 
     const [user, setUser] = useState<UserEntity | null>(null)
 

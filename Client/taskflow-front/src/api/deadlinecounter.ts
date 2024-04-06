@@ -1,5 +1,5 @@
 // @ts-ignore
-function calculateEndDate(startTimestamp, workDays) {
+export default function calculateEndDate(startTimestamp, workDays) {
     let startDate = new Date(startTimestamp * 1000);
 
     let currentDate = new Date(startDate);

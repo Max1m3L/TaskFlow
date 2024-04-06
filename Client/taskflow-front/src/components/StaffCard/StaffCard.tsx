@@ -10,8 +10,8 @@ const StaffCard: React.FC<{user: UserEntity}> = ({user}) => {
                 <div>
                     <h2 className="font-bold text-3xl">{user.name + " " + user.surname}</h2>
                     <p>Должность: {user.post}</p>
-                    <p>Команда: {user.team}</p>s
-                    <p>Электронная почта: {user.gmail}</p>
+                    <p>Команда: {user.team}</p>
+                    <p>{user.gmail}</p>
                 </div>
             </article>
         </Link>
