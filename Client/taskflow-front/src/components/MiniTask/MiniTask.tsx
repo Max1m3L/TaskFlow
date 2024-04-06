@@ -1,12 +1,28 @@
 import React, {useEffect, useState} from 'react';
-import deadlinecounter from '../../api/deadlinecounter';
 import {TaskEntity} from "../../types/entities";
 
 const MiniTask: React.FC<{ task: TaskEntity }> = ({task}) => {
     const [opened, setOpened] = useState(false);
 
+    function calculateEndDate(startTimestamp: number, workDays: number) {
+        let startDate = new Date(startTimestamp * 1000);
+
+        let currentDate = new Date(startDate);
+        let daysWorked = 0;
+
+        while (daysWorked < workDays) {
+            if (currentDate.getDay() !== 0 && currentDate.getDay() !== 6) {
+                daysWorked++;
+            }
+
+            currentDate.setDate(currentDate.getDate() + 1);
+        }
+
+        return currentDate;
+    }
+
     const timeToAdd = Math.ceil((Number(task.sp_test) + Number(task.sp_analysis) + Number(task.sp_analysis) + Number(task.sp_release)) / 8);
-    const deadline = deadlinecounter((task.startdate ? new Date(task.startdate.split(' ')[0]).getTime() : Date.now()), timeToAdd).toDateString();
+    const deadline = calculateEndDate((task.startdate ? new Date(task.startdate.split(' ')[0]).getTime() : Date.now()), timeToAdd).toDateString();
 
     const handleTaskOpen = () => {
         setOpened(!opened);
