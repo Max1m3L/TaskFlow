@@ -79,17 +79,17 @@ const Tasks = () => {
                                  fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <line x1="1.06066" y1="1.93934" x2="23.0607" y2="23.9393" stroke="#333344"
-                                      stroke-width="3"/>
+                                      strokeWidth="3"/>
                                 <line x1="20.9393" y1="23.9393" x2="42.9393" y2="1.93934" stroke="#333344"
-                                      stroke-width="3"/>
+                                      strokeWidth="3"/>
                             </svg>
                             :
                             <svg className="transition" width="30" height="11" viewBox="0 0 44 25" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <line x1="1.06066" y1="1.93934" x2="23.0607" y2="23.9393" stroke="#333344"
-                                      stroke-width="3"/>
+                                      strokeWidth="3"/>
                                 <line x1="20.9393" y1="23.9393" x2="42.9393" y2="1.93934" stroke="#333344"
-                                      stroke-width="3"/>
+                                      strokeWidth="3"/>
                             </svg>
                     }
                     {
@@ -132,8 +132,8 @@ const Tasks = () => {
                         </div>
                     }
                 </p>
-                <Button link="/" className="py-2 px-4">
-                    <div className="flex items-center gap-x-2">
+                <Button link="/" className="w-fit block">
+                    <div className="flex items-center gap-x-2 py-2 px-4 justify-center bg-accent font-medium text-xl text-[#FFF] rounded-2xl">
                         <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M7.1002 0.0907726C6.94555 0.189188 0.431446 6.38462 0.276795 6.58613C-0.0793721 7.03603 -0.0934313 7.86084 0.24399 8.36228C0.375209 8.55442 6.894 14.778 7.1002 14.9092C7.29235 15.031 7.70475 15.031 7.91095 14.9045C8.13121 14.7686 8.24837 14.553 8.24837 14.2625C8.24837 14.1266 8.22494 13.9625 8.19214 13.8969C8.16402 13.8313 6.83308 12.5426 5.23501 11.0242L2.33413 8.27324L9.94485 8.24981C17.1807 8.22638 17.5603 8.22169 17.6821 8.14202C18.1086 7.86552 18.1086 7.13444 17.6821 6.85795C17.5603 6.77828 17.1807 6.77359 9.95423 6.75016L2.35287 6.72673L5.21158 4.00861C6.78621 2.51365 8.11247 1.22488 8.15933 1.1499C8.28118 0.957758 8.27649 0.545355 8.15465 0.339152C8.1031 0.254797 7.99531 0.14701 7.91095 0.095459C7.70475 -0.0310736 7.29235 -0.0310736 7.1002 0.0907726Z"

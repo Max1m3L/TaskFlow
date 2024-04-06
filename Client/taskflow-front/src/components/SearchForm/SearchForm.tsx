@@ -1,12 +1,16 @@
 import React from 'react';
 
-const SearchForm = () => {
+const SearchForm: React.FC<{setQuery: React.Dispatch<React.SetStateAction<string>>}> = ({setQuery}) => {
+
+
     return (
         <div className="text-center">
             <form role="search"
                   className="inline-flex items-center gap-x-6 py-4 px-8 my-7 rounded-3xl bg-white border-2 border-black">
                 <input type="text" className="min-w-[800px] focus:outline-none"
-                       placeholder="Введите название проекта или его номер"/>
+                       placeholder="Введите название проекта или его номер"
+                        onChange={e => setQuery(e.target.value)}
+                />
                 <button type="submit">
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path

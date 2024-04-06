@@ -7,6 +7,11 @@ import {ProjectEntity} from "../types/entities";
 
 const Projects = () => {
     const [projects, setProjects] = React.useState<ProjectEntity[]>([]);
+    const [query, setQuery] = React.useState('');
+
+    const filteredProjects = projects.filter((project: ProjectEntity) => {
+        return project.name.toLowerCase().includes(query.toLowerCase());
+    })
 
     useEffect(() => {
         fetch("http://localhost:8080/projects")
@@ -16,11 +21,11 @@ const Projects = () => {
 
     return (
         <Layout className="text-center">
-            <SearchForm/>
+            <SearchForm setQuery={setQuery} />
             <Filters />
             <div className="flex flex-col max-w-[1200px] mx-auto gap-y-7 pb-7">
                 {
-                    projects.map((project: ProjectEntity) => (
+                    filteredProjects.map((project: ProjectEntity) => (
                         <ProjectPreview key={project.id}
                                         title={project.name}
                                         link={`/projects/${project.id}`}
