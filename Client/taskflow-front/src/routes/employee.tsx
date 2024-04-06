@@ -13,7 +13,7 @@ const Employee = () => {
         fetch(`http://localhost:8080/users/${id}`)
             .then(response => response.json())
             .then(json => setUser(json))
-    }, [])
+    }, [id])
 
     return (
         <Layout>
