@@ -1,0 +1,3 @@
+/home/vboxuser/Desktop/Notifications/cmake-build-debug/CMakeFiles/Notifications.dir
+/home/vboxuser/Desktop/Notifications/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/vboxuser/Desktop/Notifications/cmake-build-debug/CMakeFiles/rebuild_cache.dir
