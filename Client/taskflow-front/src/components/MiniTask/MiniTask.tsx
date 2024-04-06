@@ -17,13 +17,13 @@ const MiniTask: React.FC<{ task: TaskEntity }> = ({task}) => {
     }, [opened])
 
     return (
-        <article className="p-6 bg-white border-2 border-[#C9C6C3] rounded-2xl max-w-80 flex-shrink-0 cursor-pointer"
+        <article className="p-6 bg-white border-2 border-[#C9C6C3] rounded-2xl max-w-96 flex-shrink-0 cursor-pointer"
                  onMouseDown={handleTaskOpen}>
             <h2 className="font-bold text-2xl pb-3">{task.name}</h2>
-            <p className="text-sm pb-6">{task.description}</p>
-            <div className="flex items-center justify-between">
+            <p className="text-sm pb-6">{task.description ?? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}</p>
+            <div className="flex items-center justify-between gap-x-6">
                 <p className="py-3 px-6 bg-[#EEEEEE] rounded-xl">{task.status_}</p>
-                <p className="py-3 px-6 bg-[#EEEEEE] rounded-xl">{task.startdate}</p>
+                <p className="py-3 px-6 bg-[#EEEEEE] rounded-xl">{"00.00.0000"}</p>
             </div>
             {
                 opened &&
@@ -48,7 +48,7 @@ const MiniTask: React.FC<{ task: TaskEntity }> = ({task}) => {
                             </svg>
                             <div>
                                 <h2 className="text-3xl font-bold pb-8">{task.name}</h2>
-                                <p>{task.description}</p>
+                                <p>{task.description ?? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}</p>
                             </div>
                             <div className="flex-shrink-0">
                                 <p className="text-[#636363] text-lg font-light">#{task.id}</p>
@@ -56,26 +56,38 @@ const MiniTask: React.FC<{ task: TaskEntity }> = ({task}) => {
                                 <p className={"font-semibold text-xl mb-6"}>Срок до: SP ALGO</p>
                                 <p className={"font-semibold text-lg"}>Сотрудники:</p>
                                 <ul>
-                                    <li className="flex items-center gap-x-2 mt-4"><img src="/avatars/normis.png"
-                                                                                        alt="Avatar"
-                                                                                        className="w-6 h-6 object-cover rounded-full"/>
-                                        {task.analyst_}
-                                    </li>
-                                    <li className="flex items-center gap-x-2 mt-4"><img src="/avatars/normis.png"
-                                                                                        alt="Avatar"
-                                                                                        className="w-6 h-6 object-cover rounded-full"/>
-                                        {task.developer}
-                                    </li>
-                                    <li className="flex items-center gap-x-2 mt-4"><img src="/avatars/normis.png"
-                                                                                        alt="Avatar"
-                                                                                        className="w-6 h-6 object-cover rounded-full"/>
-                                        {task.tester}
-                                    </li>
-                                    <li className="flex items-center gap-x-2 mt-4"><img src="/avatars/normis.png"
-                                                                                        alt="Avatar"
-                                                                                        className="w-6 h-6 object-cover rounded-full"/>
-                                        {task.manager}
-                                    </li>
+                                    {
+                                        task.analyst_ &&
+                                        <li className="flex items-center gap-x-2 mt-4"><img src="/avatars/normis.png"
+                                                                                            alt="Avatar"
+                                                                                            className="w-6 h-6 object-cover rounded-full"/>
+                                            {task.analyst_}
+                                        </li>
+                                    }
+                                    {
+                                        task.developer &&
+                                        <li className="flex items-center gap-x-2 mt-4"><img src="/avatars/normis.png"
+                                                                                            alt="Avatar"
+                                                                                            className="w-6 h-6 object-cover rounded-full"/>
+                                            {task.developer}
+                                        </li>
+                                    }
+                                    {
+                                        task.tester &&
+                                        <li className="flex items-center gap-x-2 mt-4"><img src="/avatars/normis.png"
+                                                                                            alt="Avatar"
+                                                                                            className="w-6 h-6 object-cover rounded-full"/>
+                                            {task.tester}
+                                        </li>
+                                    }
+                                    {
+                                        task.developer &&
+                                        <li className="flex items-center gap-x-2 mt-4"><img src="/avatars/normis.png"
+                                                                                            alt="Avatar"
+                                                                                            className="w-6 h-6 object-cover rounded-full"/>
+                                            {task.manager}
+                                        </li>
+                                    }
                                 </ul>
                             </div>
                         </div>

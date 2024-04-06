@@ -32,11 +32,11 @@ const router = createBrowserRouter([
         element: <Tasks />
     },
     {
-        path: "/employee/:employeeId",
+        path: "/users/:userId",
         element: <Employee />
     },
     {
-        path: "/staff",
+        path: "/users",
         element: <Staff />
     }
 ])
