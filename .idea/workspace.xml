@@ -4,9 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c60aae7c-8c05-45c3-9ccf-048f1f5b6278" name="Changes" comment="try to add gitignore">
+    <list default="true" id="c60aae7c-8c05-45c3-9ccf-048f1f5b6278" name="Changes" comment="smth">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/routes/project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/routes/project.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/src/routes/tasks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/src/routes/tasks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/taskflow-front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/taskflow-front/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/entity/taskStuff/Condition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/entity/taskStuff/Priority.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/entity/taskStuff/Stage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/entity/taskStuff/Status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/repository/ProjectRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/src/main/java/com/maxlvshv/taskflow/repository/ProjectRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/controller/ProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/controller/ProjectController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/controller/TaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/controller/TaskController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/taskStuff/Condition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/taskStuff/Priority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/taskStuff/Stage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/entity/taskStuff/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/ProjectRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/ProjectRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/repository/UserRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/service/ProjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Java/target/classes/com/maxlvshv/taskflow/service/ProjectService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,28 +64,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/_petprojects/TaskFlow/Client/taskflow-front&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/_petprojects/TaskFlow/Client/taskflow-front",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.general",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="TaskFlow" />
@@ -117,6 +136,16 @@
       <workItem from="1712256101633" duration="18000" />
       <workItem from="1712341757637" duration="2305000" />
       <workItem from="1712344777136" duration="152000" />
+      <workItem from="1712349336911" duration="680000" />
+      <workItem from="1712350166268" duration="93000" />
+      <workItem from="1712350393550" duration="312000" />
+      <workItem from="1712352456915" duration="144000" />
+      <workItem from="1712356555362" duration="25000" />
+      <workItem from="1712356653278" duration="25000" />
+      <workItem from="1712356761620" duration="134000" />
+      <workItem from="1712357047037" duration="194000" />
+      <workItem from="1712357625398" duration="164000" />
+      <workItem from="1712357823000" duration="915000" />
     </task>
     <task id="LOCAL-00001" summary="big stuff 3">
       <option name="closed" value="true" />
@@ -158,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712343252310</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="smth">
+      <option name="closed" value="true" />
+      <created>1712349498794</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712349498794</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +218,7 @@
     <MESSAGE value="add docker-compose.yml" />
     <MESSAGE value="try to add gitignore" />
     <MESSAGE value="change to front docker-compose.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="change to front docker-compose.yml" />
+    <MESSAGE value="smth" />
+    <option name="LAST_COMMIT_MESSAGE" value="smth" />
   </component>
 </project>

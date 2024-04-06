@@ -69,12 +69,12 @@ public class TaskEntity {
     public Integer sp_release;
 
     @Column
-    public String startDate;
+    public String startdate;
 
     @Column
-    public Integer taskNumberBlock;
+    public Integer tasknumberblock;
 
     @Column
-    public Integer blockTrack;
+    public Integer blocktrack;
 
 }

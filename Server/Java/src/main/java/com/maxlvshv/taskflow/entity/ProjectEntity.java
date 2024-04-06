@@ -15,8 +15,8 @@ public class ProjectEntity {
     @Column
     public String description;
     @Column
-    public String startDate;
+    public String startdate;
     @Column
-    public String endDate;
+    public String enddate;
 
 }
