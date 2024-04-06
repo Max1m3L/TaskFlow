@@ -84,7 +84,10 @@ const MiniTask: React.FC<{ task: TaskEntity }> = ({task}) => {
                                 <p className="text-[#636363] text-lg font-light">#{task.id}</p>
                                 <p className="text-[#636363] text-lg font-light mb-2">{task.stage_}</p>
                                 <p className={"font-semibold text-xl mb-6"}>Срок до: {deadline}</p>
-                                <p className={"font-semibold text-lg"}>Сотрудники:</p>
+                                <p className={"font-semibold text-lg mb-3"}>Статус: {task.stage_}</p>
+                                <p className={"font-semibold text-lg mb-3"}>Заказчик: {task.customer}</p>
+                                <p className={"font-semibold text-lg mb-3"}>Приемщик: {task.inspector}</p>
+                                <p className={"font-semibold text-lg"}>Команда: {task.team_}</p>
                                 <ul>
                                     {
                                         task.analyst_ &&
@@ -111,7 +114,7 @@ const MiniTask: React.FC<{ task: TaskEntity }> = ({task}) => {
                                         </li>
                                     }
                                     {
-                                        task.developer &&
+                                        task.manager &&
                                         <li className="flex items-center gap-x-2 mt-4"><img src="/avatars/normis.png"
                                                                                             alt="Avatar"
                                                                                             className="w-6 h-6 object-cover rounded-full"/>

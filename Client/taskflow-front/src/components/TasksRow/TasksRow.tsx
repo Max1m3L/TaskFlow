@@ -40,7 +40,7 @@ const TasksRow: React.FC<{ type: TaskRowType, className?: string, tasks: TaskEnt
                 </span>
             </div>
             <div
-                className="flex items-center gap-x-8 bg-[#F9F9F9] border-2 border-[#C9C6C3] rounded-3xl py-6 px-8 overflow-x-scroll">
+                className="custom-scroll flex items-center gap-x-8 bg-[#F9F9F9] border-2 border-[#C9C6C3] rounded-3xl py-6 px-8 overflow-x-scroll">
                 {
                     tasks.map(task => (
                         <MiniTask
