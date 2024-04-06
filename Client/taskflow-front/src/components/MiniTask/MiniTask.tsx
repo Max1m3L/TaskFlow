@@ -5,7 +5,7 @@ const MiniTask: React.FC<{ task: TaskEntity }> = ({task}) => {
     const [opened, setOpened] = useState(false);
 
     function calculateEndDate(startTimestamp: number, workDays: number) {
-        let startDate = new Date(startTimestamp * 1000);
+        let startDate = new Date(startTimestamp);
 
         let currentDate = new Date(startDate);
         let daysWorked = 0;
@@ -22,7 +22,7 @@ const MiniTask: React.FC<{ task: TaskEntity }> = ({task}) => {
     }
 
     const timeToAdd = Math.ceil((Number(task.sp_test) + Number(task.sp_analysis) + Number(task.sp_analysis) + Number(task.sp_release)) / 8);
-    const deadline = calculateEndDate((task.startdate ? new Date(task.startdate.split(' ')[0]).getTime() : Date.now()), timeToAdd).toDateString();
+    const deadline = calculateEndDate((task.startdate ? new Date(task.startdate.split(' ')[0]).getTime() : Date.now()), timeToAdd).toLocaleDateString();
 
     const handleTaskOpen = () => {
         setOpened(!opened);

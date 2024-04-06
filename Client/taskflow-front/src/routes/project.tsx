@@ -18,8 +18,8 @@ const Project = () => {
 
     return (
         <Layout>
-            <div className="flex items-start gap-x-5 p-7">
-                <section className="flex-grow bg-[#fff] rounded-[32px] border-2 border-[#C9C6C3] p-10 min-h-[600px]">
+            <div className="flex items-start gap-x-5 p-7 pb-20">
+                <section className="flex-grow bg-[#fff] rounded-[32px] border-2 border-[#C9C6C3] p-10 min-h-[90vh]">
                     <span className="font-light text-[#595858] text-lg">#{projectJSON?.id}</span>
                     <h1 className="font-bold text-3xl">{projectJSON?.name}</h1>
                     <span className="block text-2xl pt-3 pb-6">Сроки: с {projectJSON?.startdate} до {projectJSON?.enddate}</span>
