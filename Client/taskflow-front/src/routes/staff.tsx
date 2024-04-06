@@ -3,17 +3,6 @@ import Layout from "../components/Layout/Layout";
 import StaffCard from "../components/StaffCard/StaffCard";
 import {UserEntity} from "../types/entities";
 
-// const mockes: UserEntity[] = [{id: 1, team: "Team1", post:"post", name: "Tim", surname: "Cook", gmail: "cook@cook.com"},
-//     {id: 1, team: "Team1", post:"post", name: "Tim", surname: "Cook", gmail: "cook@cook.com"},
-//     {id: 1, team: "Team1", post:"post", name: "Tim", surname: "Cook", gmail: "cook@cook.com"},
-//     {id: 1, team: "Team1", post:"post", name: "Tim", surname: "Cook", gmail: "cook@cook.com"},
-//     {id: 1, team: "Team1", post:"post", name: "Tim", surname: "Cook", gmail: "cook@cook.com"},
-//     {id: 1, team: "Team1", post:"post", name: "Tim", surname: "Cook", gmail: "cook@cook.com"},
-//     {id: 1, team: "Team1", post:"post", name: "Tim", surname: "Cook", gmail: "cook@cook.com"},
-//     {id: 1, team: "Team1", post:"post", name: "Tim", surname: "Cook", gmail: "cook@cook.com"},
-//     {id: 1, team: "Team1", post:"post", name: "Tim", surname: "Cook", gmail: "cook@cook.com"},
-// ];
-
 const Staff = () => {
     const [users, setUsers] = useState<UserEntity[]>([])
 

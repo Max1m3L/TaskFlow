@@ -3,12 +3,12 @@ import NameFilter from "./NameFilter";
 import CustomerFilter from "./CustomerFilter";
 import PriorityFilter from "./PriorityFilter";
 import TeamFilter from "./TeamFilter";
-import {FiltersTypes} from "../../types/filtersTypes";
+import {ProjectsFiltersTypes} from "../../types/projectsFiltersTypes";
 
 const Filters = () => {
-    const [filter, setFilter] = useState<FiltersTypes | null>(null);
+    const [filter, setFilter] = useState<ProjectsFiltersTypes | null>(null);
 
-    const handleFilterOpen = (newFilter: FiltersTypes) => {
+    const handleFilterOpen = (newFilter: ProjectsFiltersTypes) => {
         if (newFilter === filter) setFilter(null);
         else setFilter(newFilter);
     }
@@ -21,21 +21,21 @@ const Filters = () => {
 
     return (
         <ul className="flex justify-center gap-x-12 mb-12 text-[#7F7878]">
-            <NameFilter opened={filter === FiltersTypes.NAME} setOpened={(e) => {
+            <NameFilter opened={filter === ProjectsFiltersTypes.NAME} setOpened={(e) => {
                 e.stopPropagation()
-                handleFilterOpen(FiltersTypes.NAME)
+                handleFilterOpen(ProjectsFiltersTypes.NAME)
             }} />
-            <CustomerFilter opened={filter === FiltersTypes.CUSTOMER} setOpened={(e) => {
+            <CustomerFilter opened={filter === ProjectsFiltersTypes.CUSTOMER} setOpened={(e) => {
                 e.stopPropagation()
-                handleFilterOpen(FiltersTypes.CUSTOMER)
+                handleFilterOpen(ProjectsFiltersTypes.CUSTOMER)
             }} />
-            <PriorityFilter opened={filter === FiltersTypes.PRIORITY} setOpened={(e) => {
+            <PriorityFilter opened={filter === ProjectsFiltersTypes.PRIORITY} setOpened={(e) => {
                 e.stopPropagation()
-                handleFilterOpen(FiltersTypes.PRIORITY)
+                handleFilterOpen(ProjectsFiltersTypes.PRIORITY)
             }} />
-            <TeamFilter opened={filter === FiltersTypes.TEAM} setOpened={(e) => {
+            <TeamFilter opened={filter === ProjectsFiltersTypes.TEAM} setOpened={(e) => {
                 e.stopPropagation()
-                handleFilterOpen(FiltersTypes.TEAM)
+                handleFilterOpen(ProjectsFiltersTypes.TEAM)
             }} />
         </ul>
     );

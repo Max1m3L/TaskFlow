@@ -1,25 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {TaskEntity} from "../../types/entities";
+import {calculateEndDate} from "../../api/deadline";
 
 const MiniTask: React.FC<{ task: TaskEntity }> = ({task}) => {
     const [opened, setOpened] = useState(false);
-
-    function calculateEndDate(startTimestamp: number, workDays: number) {
-        let startDate = new Date(startTimestamp);
-
-        let currentDate = new Date(startDate);
-        let daysWorked = 0;
-
-        while (daysWorked < workDays) {
-            if (currentDate.getDay() !== 0 && currentDate.getDay() !== 6) {
-                daysWorked++;
-            }
-
-            currentDate.setDate(currentDate.getDate() + 1);
-        }
-
-        return currentDate;
-    }
 
     const timeToAdd = Math.ceil((Number(task.sp_test) + Number(task.sp_analysis) + Number(task.sp_analysis) + Number(task.sp_release)) / 8);
     const deadline = calculateEndDate((task.startdate ? new Date(task.startdate.split(' ')[0]).getTime() : Date.now()), timeToAdd).toLocaleDateString();
@@ -36,13 +20,39 @@ const MiniTask: React.FC<{ task: TaskEntity }> = ({task}) => {
         }
     }, [opened])
 
+    let priorityTextColor;
+    let priorityDecorationColor;
+    if (task.priority === "Высокий") {
+        priorityTextColor = "text-[#FF0000]"
+        priorityDecorationColor = "bg-[#FF0000]"
+    } else if (task.priority === "Средний") {
+        priorityTextColor = "text-[#FFB800]"
+        priorityDecorationColor = "bg-[#FFB800]"
+    } else if (task.priority === "Низкий") {
+        priorityTextColor = "text-[#00B807]"
+        priorityDecorationColor = "bg-[#00B807]"
+    }
+
+    let statusBgColor;
+    if (task.status_ === "Анализ") {
+        statusBgColor = "bg-accent"
+    } else if (task.status_ === "Разработка") {
+        statusBgColor = "bg-[#FF0000]"
+    } else if (task.status_ === "Новая") {
+        statusBgColor = "bg-[#8200E8]"
+    } else if (task.status_ === "Тестирование") {
+        statusBgColor = "bg-[#FFB800]"
+    } else if (task.status_ === "Релиз") {
+        statusBgColor = "bg-[#00B807]"
+    }
+
     return (
         <article className="p-6 bg-white border-2 border-[#C9C6C3] rounded-2xl max-w-96 flex-shrink-0 cursor-pointer"
                  onMouseDown={handleTaskOpen}>
             <h2 className="font-bold text-2xl pb-3">{task.name}</h2>
             <p className="text-sm pb-6">{task.description ?? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}</p>
             <div className="flex items-center justify-between gap-x-6">
-                <p className="py-3 px-6 bg-[#EEEEEE] rounded-xl">{task.status_}</p>
+                <p className={`py-3 px-6 text-white rounded-xl ${statusBgColor}`}>{task.status_}</p>
                 <p className="py-3 px-6 bg-[#EEEEEE] rounded-xl">{deadline}</p>
             </div>
             {
@@ -55,8 +65,8 @@ const MiniTask: React.FC<{ task: TaskEntity }> = ({task}) => {
                         }}>
                         <div className="relative flex items-start justify-between gap-x-32 p-12 pt-20 w-full">
                             <div className="absolute left-12 top-6 flex items-center gap-x-2">
-                                <span className="w-2 h-2 rounded-full bg-[#FF0000]/[0.6] block"></span>
-                                <span className="text-[#FF0000]/[0.6]">{task.priority}</span>
+                                <span className={`w-2 h-2 rounded-full block ${priorityDecorationColor}`}></span>
+                                <span className={priorityTextColor}>{task.priority}</span>
                             </div>
                             <svg className="cursor-pointer absolute right-6 top-6" onClick={() => {
                                 setOpened(false)
