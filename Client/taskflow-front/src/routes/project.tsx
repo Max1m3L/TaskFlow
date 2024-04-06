@@ -38,17 +38,6 @@ const Project = () => {
                             Сотрудники
                         </button>
                     </Button>
-                    <span className="block font-semibold my-4">Заказчики:</span>
-                    <ul>
-                        <li className="flex items-center gap-x-2">
-                        <img src="/avatars/normis.png" alt="Avatar" className="w-6 h-6 object-cover rounded-full" />
-                            <span>Иван Иванов</span>
-                        </li>
-                        <li className="flex items-center gap-x-2 mt-4">
-                            <img src="/avatars/normis.png" alt="Avatar" className="w-6 h-6 object-cover rounded-full"/>
-                            <span>Макс Максбетов</span>
-                        </li>
-                    </ul>
                 </aside>
             </div>
         </Layout>
